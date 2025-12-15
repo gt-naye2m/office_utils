@@ -8,14 +8,23 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_zack",
+  "main_dats_column",
   "amended_from",
   "submitter",
-  "submit_date"
+  "submit_date",
+  "include",
+  "exclude",
+  "instruction"
  ],
  "fields": [
   {
    "fieldname": "section_break_zack",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "main_dats_column",
+   "fieldtype": "Column Break",
+   "label": "MAIN DATS"
   },
   {
    "fieldname": "amended_from",
@@ -42,13 +51,28 @@
    "in_list_view": 1,
    "label": "Submit Date",
    "reqd": 1
+  },
+  {
+   "fieldname": "include",
+   "fieldtype": "Text",
+   "label": "Include"
+  },
+  {
+   "fieldname": "exclude",
+   "fieldtype": "Text",
+   "label": "Exclude"
+  },
+  {
+   "fieldname": "instruction",
+   "fieldtype": "Text Editor",
+   "label": "instruction"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-15 10:10:04.597192",
+ "modified": "2025-12-15 14:05:18.805985",
  "modified_by": "Administrator",
  "module": "Office Utils",
  "name": "Food Order",
